@@ -1,0 +1,31 @@
+@import "../../../../../styles/index.scss";
+
+.ant-collapse {
+  border: none;
+  display: flex;
+  flex-direction: column;
+  row-gap: 17px;
+  margin-bottom: 16px;
+  width: 100%;
+}
+
+.ant-tabs-content .ant-collapse .ant-collapse-item {
+  border: 1px solid $scrollbar-color;
+  border-radius: 5px;
+}
+
+.custom_styles {
+  .ant-collapse-item .ant-collapse-content .ant-collapse-content-box {
+    padding: 10px;
+  }
+
+  .ant-collapse-item .ant-collapse-header {
+    padding: 0;
+    align-items: center;
+  }
+
+  .ant-collapse-expand-icon {
+    position: absolute;
+    right: 10px;
+  }
+}

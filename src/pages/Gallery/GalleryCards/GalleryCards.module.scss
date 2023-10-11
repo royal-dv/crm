@@ -1,0 +1,41 @@
+@import "../../../styles/index.scss";
+
+.gallery {
+  &_cards {
+    display: flex;
+    gap: 15px 30px;
+    flex-wrap: wrap;
+    overflow-y: auto;
+
+    &__no_data {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      min-height: 80px;
+    }
+    &_warning {
+      padding: 20px;
+      z-index: 10;
+      top: 0;
+      left: 0;
+      position: absolute;
+      background-color: $white-color;
+      border-radius: 5px;
+    }
+    &_warning_btns {
+      margin: 10px 0;
+      button {
+        margin: 0 0 10px 0;
+      }
+    }
+    &__project_input {
+      margin: 0 0 10px 0;
+    }
+  }
+
+  &_pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

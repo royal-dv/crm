@@ -1,0 +1,32 @@
+@import "../../../styles/index.scss";
+
+.profile_settings_users {
+  display: flex;
+  flex-direction: column;
+  row-gap: 25px;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 9px;
+  }
+
+  &__title {
+    font-size: 12px;
+    color: $black-color;
+  }
+
+  &_confirm {
+    font-size: 14px;
+    font-weight: 500;
+    text-align: justify;
+
+    &_footer {
+      display: flex;
+      flex-direction: row;
+      column-gap: 10px;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+}

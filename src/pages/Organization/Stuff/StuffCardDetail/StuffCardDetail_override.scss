@@ -1,0 +1,16 @@
+@import "../../../../styles/index.scss";
+
+.custom_styles {
+  .ant-modal-content {
+    padding: 0;
+  }
+
+  .ant-modal-close {
+    top: 14px;
+  }
+
+  .ant-form-item-control-input-content {
+    display: flex;
+    flex-direction: column;
+  }
+}

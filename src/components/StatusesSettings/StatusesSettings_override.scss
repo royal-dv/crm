@@ -1,0 +1,33 @@
+@import "../../styles/index.scss";
+
+.custom_styles {
+  .ant-checkbox + span {
+    padding-inline-start: 12px;
+    padding-inline-end: 12px;
+    color: $black-color;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  .ant-checkbox .ant-checkbox-inner {
+    width: 20px;
+    height: 20px;
+
+    &:after {
+      width: 6.714286px;
+      height: 12.142857px;
+    }
+  }
+
+  .ant-checkbox-wrapper {
+    max-width: 200px;
+    width: 100%;
+  }
+}
+
+.custom_styles.ant-checkbox-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px 10px;
+}

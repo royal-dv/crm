@@ -1,0 +1,49 @@
+@import "../../styles/variables.scss";
+
+.blanks {
+  padding: 20px 0;
+  border-top: 1px solid $date-color;
+  border-bottom: 1px solid $date-color;
+  &__title {
+    padding: 0 0 20px 0;
+    font-size: 16px;
+    font-weight: 400;
+  }
+  &__btns {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  &__btn {
+    min-width: 120px;
+    width: 28%;
+    margin: 0 20px 10px 0;
+    background-color: $light-blue-color;
+  }
+  &__modal_header {
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: $grey-color;
+    border-radius: 5px 5px 0 0;
+  }
+
+  &__modal_close {
+    padding: 0;
+    border: none;
+  }
+
+  &__warning {
+    padding: 20px;
+  }
+
+  &__warning_btns {
+    margin: 20px 0 0 0;
+    display: flex;
+  }
+
+  &__close {
+    margin: 0 10px 0 0;
+    background-color: $warn-color;
+  }
+}

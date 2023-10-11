@@ -1,0 +1,16 @@
+@import "../../styles/index.scss";
+
+.profile_settings {
+  top: 80px;
+  right: 50px;
+  position: absolute;
+  z-index: 3;
+  width: 335px;
+  box-shadow: 0 0 6px 3px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  background-color: $white-color;
+
+  &__container {
+    padding: 15px 22px 20px;
+  }
+}

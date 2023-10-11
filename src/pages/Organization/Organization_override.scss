@@ -1,0 +1,29 @@
+@import "../../styles/variables.scss";
+
+.organization__tabs .ant-tabs-tab-active {
+  background-color: $tabs-text-active;
+  overflow: visible;
+}
+
+.organization__tabs .ant-tabs-tab {
+  box-shadow: 0 8px 8px 0px rgba(191, 191, 191, 0.2);
+}
+
+.organization__tabs .ant-tabs-top > .ant-tabs-nav::before {
+  display: none;
+}
+
+.organization__tabs .ant-tabs-nav .ant-tabs-nav-wrap {
+  overflow: visible;
+}
+.organization__tabs .ant-tabs-tab-active span {
+  color: $white-color;
+}
+
+.organization__tabs .ant-tabs-tab-active svg path {
+  stroke: $white-color;
+}
+
+.organization__tabs .ant-tabs-tab-active svg circle {
+  stroke: $white-color;
+}

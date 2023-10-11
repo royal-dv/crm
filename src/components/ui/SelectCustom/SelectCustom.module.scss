@@ -1,0 +1,21 @@
+@import "../../../styles/index.scss";
+
+.custom_select_blue {
+  min-width: 200px;
+  background-color: $blue-color;
+  color: $white-color;
+  border-radius: 6px;
+  &:hover {
+    background-color: $white-color;
+  }
+}
+
+.custom_select_orange {
+  min-width: 200px;
+  background-color: $orange-color;
+  color: $white-color;
+  border-radius: 6px;
+  &:hover {
+    background-color: $white-color;
+  }
+}

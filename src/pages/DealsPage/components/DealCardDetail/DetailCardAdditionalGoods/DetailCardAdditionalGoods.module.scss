@@ -1,0 +1,30 @@
+@import "../../../../../styles/index.scss";
+
+.detailCard_additionalGoods {
+  display: flex;
+  flex-direction: column;
+  row-gap: 22px;
+
+  &__header {
+    &_title {
+      color: $black-color;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: normal;
+      padding: 15px;
+      background: $grey-color;
+      border-radius: 8px 8px 0 0;
+    }
+  }
+
+  &__send_container {
+    align-self: flex-end;
+
+    &_custom_button {
+      color: $white-color;
+      font-size: 10px;
+      font-weight: 400;
+      line-height: normal;
+    }
+  }
+}

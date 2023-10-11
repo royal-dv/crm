@@ -1,0 +1,28 @@
+@import "../../../styles/index.scss";
+
+.headerTitle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  background: $grey-color;
+  padding-left: 10px;
+
+  &__name {
+    color: $black-color;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: normal;
+  }
+
+  &__button {
+    padding: 0;
+    width: 25px;
+    background: none;
+    box-shadow: none;
+    border: none;
+    &:hover {
+      background-color: none;
+    }
+  }
+}

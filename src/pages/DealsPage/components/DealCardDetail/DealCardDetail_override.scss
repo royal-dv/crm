@@ -1,0 +1,42 @@
+@import "../../../../styles/index.scss";
+
+.ant-modal-content .ant-modal-body .ant-select .ant-select-selector {
+  background-color: $white-color;
+}
+
+.ant-modal-content .ant-modal-body .ant-select .ant-select-arrow {
+  color: $black-color;
+  path {
+    fill: $black-color;
+  }
+}
+
+.ant-modal-content .ant-modal-footer {
+  display: flex;
+  justify-content: end;
+  padding: 0;
+}
+
+.ant-modal-content .ant-modal-header .ant-modal-title {
+  padding: 0;
+}
+
+.ant-modal-body .ant-select .ant-select-selector .ant-select-selection-item {
+  color: $black-color;
+}
+
+.ant-select-arrow {
+  background-color: transparent;
+}
+
+.ant-input-affix-wrapper-disabled .ant-input[disabled] {
+  color: $black-color;
+}
+
+.custom-styles .ant-modal-content {
+  padding: 0;
+}
+
+.ant-modal-content .ant-modal-footer {
+  justify-content: center;
+}

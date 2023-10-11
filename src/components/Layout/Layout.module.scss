@@ -1,0 +1,68 @@
+@import "../../styles/index.scss";
+
+.container {
+  display: flex;
+}
+
+.children {
+  width: 100%;
+  padding: 10px 15px 20px;
+  overflow-x: auto;
+  margin-bottom: 15px;
+  display: flex;
+  height: calc(100vh - 89px);
+  justify-content: space-between;
+
+  &_horizontal_scroll {
+    overflow-x: hidden;
+  }
+
+  @media screen and (max-width: 1440px) {
+    padding: 10px 10px 20px;
+    margin-bottom: 10px;
+    flex-direction: column;
+    row-gap: 20px;
+
+    &_vertical_scroll {
+      height: auto;
+    }
+  }
+}
+
+::-webkit-scrollbar {
+  height: 8px;
+  width: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  width: 20px;
+  background-color: $scrollbar-color;
+}
+
+::-webkit-scrollbar-button:single-button:vertical:decrement {
+  border-width: 0 0px 20px 0px;
+  border-left: 3px solid transparent;
+  border-right: 3px solid transparent;
+  border-bottom: 8px solid $scroll-arrow-color;
+}
+
+::-webkit-scrollbar-button:single-button:vertical:increment {
+  border-width: 0 0px 20px 0px;
+  border-left: 3px solid transparent;
+  border-right: 3px solid transparent;
+  border-top: 8px solid $scroll-arrow-color;
+}
+
+::-webkit-scrollbar-button:single-button:horizontal:decrement {
+  border-width: 20px 0px 0 0px;
+  border-top: 3px solid transparent;
+  border-bottom: 3px solid transparent;
+  border-right: 8px solid $scroll-arrow-color;
+}
+
+::-webkit-scrollbar-button:single-button:horizontal:increment {
+  border-width: 20px 0px 0 0px;
+  border-top: 3px solid transparent;
+  border-bottom: 3px solid transparent;
+  border-left: 8px solid $scroll-arrow-color;
+}

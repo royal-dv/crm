@@ -1,0 +1,21 @@
+@import "../../../../styles/index.scss";
+
+.departments {
+  min-width: 200px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+
+  &__item {
+    @media screen and (max-width: 1440px) {
+      word-break: break-all;
+    }
+  }
+
+  &__none {
+    font-weight: 600;
+    @media screen and (max-width: 1440px) {
+      word-break: break-all;
+    }
+  }
+}

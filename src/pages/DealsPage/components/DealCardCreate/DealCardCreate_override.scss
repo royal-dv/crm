@@ -1,0 +1,20 @@
+@import "../../../../styles/index.scss";
+
+.ant-modal-footer {
+  padding: 0 17px;
+  display: flex;
+  justify-content: end;
+}
+
+.ant-modal-content .ant-modal-header {
+  margin: 20px 0;
+}
+
+.ant-modal-header .ant-modal-title {
+  font-weight: 400;
+  font-size: 20px;
+  padding: 10px;
+  @media screen and (max-width: 1440px) {
+    font-size: 16px;
+  }
+}

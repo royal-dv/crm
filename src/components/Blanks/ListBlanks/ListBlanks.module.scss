@@ -1,0 +1,55 @@
+@import "../../../styles/variables.scss";
+
+.listBlanks {
+  padding: 20px 40px;
+  &__header {
+    margin: 0 0 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    p {
+      margin: 0 10px 0 0;
+      width: 140px;
+      font-size: 12px;
+      text-align: center;
+    }
+  }
+  &__card {
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid $date-color;
+    // border-bottom: 1px solid $date-color;
+  }
+  &__card_index {
+    display: inline-block;
+    margin: 0 10px 0 0;
+  }
+  &__card_block {
+    margin: 0 10px 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 140px;
+    font-size: 12px;
+  }
+  &__status_text {
+    display: inline-block;
+    margin: 0 10px 0 0;
+    width: 100px;
+    text-align: left;
+  }
+
+  &__delete_btn {
+    padding: 0;
+    border: none;
+  }
+
+  &__pagination {
+    margin: 20px 0 0 0;
+    display: flex;
+    justify-content: center;
+  }
+}

@@ -1,0 +1,73 @@
+@import "../../styles/index.scss";
+
+.dealsPage {
+  &__container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  &__header {
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
+    width: 50%;
+    position: absolute;
+
+    @media screen and (max-width: 1440px) {
+      width: 90%;
+      column-gap: 10px;
+    }
+
+    &_search {
+      max-width: 520px;
+      padding: 4px 10px;
+    }
+
+    &_show_deals {
+      padding: 7px 11px;
+      width: 100%;
+
+      @media screen and (max-width: 1440px) {
+        width: auto;
+        padding: 8px 14px;
+      }
+    }
+    &_show_deals_active {
+      padding: 7px 11px;
+      width: 100%;
+      background-color: $orange-color;
+
+      @media screen and (max-width: 1440px) {
+        width: auto;
+        padding: 8px 14px;
+      }
+    }
+
+    &_custom_button {
+      @media screen and (max-width: 1440px) {
+        width: auto;
+        padding: 8px 14px;
+      }
+    }
+  }
+
+  &__data {
+    display: flex;
+    width: 100%;
+    min-width: min-content;
+    column-gap: 16px;
+    padding-right: 55px;
+    justify-content: center;
+    height: 100%;
+    margin-top: 52px;
+
+    @media screen and (max-width: 1440px) {
+      margin-top: 42px;
+    }
+
+    @media screen and (max-width: 1440px) {
+      padding-right: 10px;
+    }
+  }
+}

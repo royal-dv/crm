@@ -1,0 +1,28 @@
+@import "../../../styles/index.scss";
+
+.profile_settings__header {
+  padding: 7px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $grey-color;
+
+  &_title {
+    font-size: 12px;
+    color: $black-color;
+    font-weight: 400;
+  }
+
+  &_close {
+    height: auto;
+    padding: 0;
+    width: auto;
+    background: none;
+    box-shadow: none;
+    border: none;
+    &:hover {
+      opacity: 0.7;
+      background-color: none;
+    }
+  }
+}

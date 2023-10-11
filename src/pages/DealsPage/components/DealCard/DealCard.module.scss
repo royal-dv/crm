@@ -1,0 +1,98 @@
+@import "../../../../styles/index.scss";
+
+.dealCard {
+  padding: 10px 15px;
+  margin-right: 8px;
+  min-width: 230px;
+  border-radius: 6px;
+  background-color: $white-color;
+  border: 1px solid transparent;
+  transition: border 0.3s ease-in-out;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  row-gap: 9px;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 9px;
+  }
+
+  &__date {
+    width: 100%;
+    font-size: 10px;
+    font-weight: 400;
+    color: $date-color;
+    text-align: right;
+  }
+
+  &__title {
+    font-size: 14px;
+    font-weight: 400;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+
+  &__block {
+    display: flex;
+    align-items: center;
+    margin: 0 0 11px 0;
+  }
+
+  &__name {
+    margin: 0 0 0 8px;
+    font-size: 12px;
+    font-weight: 400;
+  }
+
+  &__buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__button {
+    padding: 0;
+    width: 25px;
+    background: none;
+    box-shadow: none;
+    border: none;
+    &:hover {
+      background-color: none;
+    }
+  }
+
+  &__buttons_block {
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+  }
+
+  &__initials {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    background-color: $orange-color;
+    border-radius: 50%;
+    color: $white-color;
+    font-size: 8px;
+    font-weight: 400;
+  }
+  svg {
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+    &:hover {
+      transform: scale(1.1);
+      transition: transform 0.3s ease-in-out;
+    }
+  }
+
+  &:hover {
+    border: 1px solid $orange-color;
+    transition: border 0.3s ease-in-out;
+  }
+}

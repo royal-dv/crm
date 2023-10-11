@@ -1,0 +1,155 @@
+@import "../../../../styles/variables.scss";
+
+.shops {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 25px;
+
+  @media screen and (max-width: 1440px) {
+    width: 100%;
+    padding: 15px 0;
+  }
+}
+
+.shopsCards {
+  width: 100%;
+  max-height: 80vh;
+  overflow-y: auto;
+  padding: 0 10px 10px 0;
+  font-size: 12px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+
+  @media screen and (max-width: 1440px) {
+    padding: 0 10px 20px 0;
+  }
+
+  &__index {
+    padding-top: 10px;
+    min-width: 20px;
+    display: inline-block;
+  }
+
+  &__shop {
+    display: flex;
+    column-gap: 12px;
+  }
+
+  &__shop_name {
+    font-weight: 600;
+    @media screen and (max-width: 1440px) {
+      word-break: break-all;
+    }
+  }
+
+  &__street {
+    @media screen and (max-width: 1440px) {
+      word-break: break-all;
+    }
+  }
+
+  &__container {
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid $date-color;
+    border-radius: 5px;
+    column-gap: 50px;
+    cursor: pointer;
+    &:hover {
+      border: 1px solid $orange-color;
+    }
+    @media screen and (max-width: 1440px) {
+      width: 100%;
+    }
+  }
+
+  &__block {
+    min-width: 200px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    @media screen and (max-width: 1440px) {
+      min-width: auto;
+    }
+  }
+
+  &__block_btns {
+    display: flex;
+    transition: opacity 0.3s;
+    width: max-content;
+    &:hover {
+      opacity: 0.7;
+      transition: opacity 0.3s;
+    }
+  }
+
+  &__add {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  &__add_button {
+    background-color: $light-blue-color;
+  }
+
+  &__header {
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: $grey-color;
+    border-radius: 5px 5px 0 0;
+  }
+
+  &__header_close {
+    padding: 0;
+    border: none;
+  }
+
+  &__inputs_wrapper {
+    padding: 30px 20px 20px 20px;
+  }
+
+  &__lables {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__input {
+    margin: 0 0 20px 0;
+    &:last-child {
+      margin: 0;
+    }
+  }
+
+  &__hint {
+    width: 100%;
+    margin: 10px 0;
+    display: inline-block;
+    text-align: center;
+    font-weight: 600;
+  }
+
+  &__add {
+    cursor: pointer;
+  }
+
+  &__save {
+    margin: 0 auto 20px auto;
+    background-color: $light-blue-color;
+  }
+
+  &__not_data {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 80px;
+  }
+}

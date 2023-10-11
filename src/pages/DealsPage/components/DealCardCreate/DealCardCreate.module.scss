@@ -1,0 +1,29 @@
+@import "../../../../styles/index.scss";
+@import "../../../../styles/variables.scss";
+
+.dealCardCreate {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 12px;
+  margin-bottom: 20px;
+
+  &__input {
+    position: relative;
+    span {
+      z-index: 1;
+      top: -5px;
+      position: absolute;
+      left: -10px;
+      color: $warn-color;
+    }
+  }
+
+  &__input_phone{
+    border-width: 1px;
+    border-style: solid;
+    border-color: $scrollbar-color;
+    padding: 7px 11px;
+    border-radius: 6px;
+  }
+}

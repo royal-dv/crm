@@ -1,0 +1,27 @@
+@import "../../../../styles/index.scss";
+
+.status_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: $black-color;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.status {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.deals_count {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: $deal-count-color;
+  color: $white-color;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+}

@@ -1,0 +1,31 @@
+@import "../../styles/index.scss";
+
+.statusesSettings {
+  display: flex;
+  flex-direction: column;
+  row-gap: 12px;
+
+  &__header {
+    &_title {
+      color: $black-color;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: normal;
+      padding: 10px;
+    }
+  }
+
+  &__data {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+  }
+
+  &__hint {
+    color: $blanks_text_color;
+    font-family: Roboto;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: normal;
+  }
+}

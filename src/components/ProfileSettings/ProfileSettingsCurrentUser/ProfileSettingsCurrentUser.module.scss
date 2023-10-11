@@ -1,0 +1,37 @@
+@import "../../../styles/index.scss";
+
+.profile_settings__current_user {
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+
+  &_container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 12px;
+
+    &_title {
+      font-size: 12px;
+      font-weight: 400;
+      color: $black-color;
+    }
+
+    &_button {
+      align-self: center;
+      width: 190px;
+    }
+
+    &_password_block {
+      display: flex;
+      flex-direction: column;
+      row-gap: 15px;
+    }
+  }
+
+  &_footer {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    row-gap: 25px;
+  }
+}

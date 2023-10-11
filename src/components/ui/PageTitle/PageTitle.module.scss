@@ -1,0 +1,14 @@
+@import "../../../styles/index.scss";
+
+.page_title {
+  color: $black-color;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: normal;
+  text-overflow: ellipsis;
+  overflow: hidden;
+
+  @media screen and (max-width: 1440px) {
+    font-size: 24px;
+  }
+}

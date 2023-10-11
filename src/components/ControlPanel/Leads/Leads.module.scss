@@ -1,0 +1,34 @@
+@import '../../../styles/variables.scss';
+
+.leads {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border: 1px solid $date-color;
+    border-radius: 5px;
+    overflow: hidden;
+
+    &__createdBy {
+        padding: 5px 10px;
+        font-size: 12px;
+        font-weight: 400;
+        background: linear-gradient(180deg, rgba(241, 247, 255, 1) 5%, rgba(111, 176, 255, 0.8) 100%);
+    }
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    &__comments {
+        display: inline-block;
+        font-size: 12px;
+        font-weight: 400;
+        margin: 0 0 36px 0;
+    }
+
+    &__button {
+        align-self: flex-end;
+        background-color: $orange-color;
+    }
+}

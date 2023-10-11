@@ -1,0 +1,15 @@
+@import "../../../../styles/index.scss";
+
+.stuffCard__select.ant-select .ant-select-selector {
+  width: 140px;
+  background-color: transparent;
+  @media screen and (max-width: 1440px) {
+    width: 120px;
+  }
+
+  .ant-select-selection-item {
+    @media screen and (max-width: 1440px) {
+      font-size: 12px;
+    }
+  }
+}

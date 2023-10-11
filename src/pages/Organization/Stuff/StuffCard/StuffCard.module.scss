@@ -1,0 +1,37 @@
+@import "../../../../styles/index.scss";
+
+.stuffCard {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  @media screen and (max-width: 1440px) {
+    column-gap: 10px;
+  }
+
+  &__item {
+    padding: 0 0px;
+    display: inline-block;
+    min-width: 156px;
+    font-size: 12px;
+    text-align: center;
+    @media screen and (max-width: 1440px) {
+      min-width: 120px;
+      font-size: 10px;
+      width: 120px;
+    }
+  }
+  &__btn {
+    cursor: pointer;
+  }
+
+  &__btn_container {
+    display: flex;
+    align-items: center;
+    column-gap: 2px;
+    min-width: 88px;
+    justify-content: center;
+    @media screen and (max-width: 1440px) {
+      min-width: 110px;
+    }
+  }
+}
